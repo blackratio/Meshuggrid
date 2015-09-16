@@ -37,7 +37,6 @@ gulp.task('sass', function () {
 
 gulp.task('html', function() {
    gulp.src('public/**/*.html');
-
 });
 
 
@@ -45,7 +44,6 @@ gulp.task('html', function() {
 
 gulp.task('js', function() {
    gulp.src('public/scripts/**/*.js');
-
 });
 
 

@@ -1,0 +1,282 @@
+/*********************************************************************
+**********************************************************************
+
+   | STYLE
+
+      // Site style and customisation
+
+      @ General
+      @ Main Menu
+      @ Content Bloc
+      @ Buttons
+
+************************************************************************
+************************************************************************/
+
+
+/************************************************
+   -> General
+*******************************************/
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 80%;
+   color: $blackgray;
+   a {
+      color: $picton;
+   }
+   a:hover {
+      color: $picton2;
+   }
+}
+pre {
+   padding: 15px !important;
+   border-radius: 4px;
+   text-align: left;
+   margin: 0;
+}
+
+.mgrid-row {
+   margin-bottom: 10px;
+   .mGrid {
+      //background-color: $rebecca;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      color: $malibu;
+      border: 1px dashed $malibu;
+   }
+}
+
+
+
+/************************************************
+   -> Main Menu
+*******************************************/
+
+#mainMenu {
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 8px 15px;
+   background-color: $jacksons;
+   transition: ease 0.4s;
+   ul.left {
+      display: none;
+      li, a {
+         margin: 0;
+         padding: 0;
+      }
+   }
+   .menu {
+      li:last-child {
+         margin-left: 20px;
+      }
+      li {
+         a {
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            font-size: 1.2em;
+         }
+         i {
+            margin-right: 10px;
+         }
+      }
+   }
+}
+#mainMenu.active {
+   box-shadow: 0 1px 3px $silver;
+   padding: 5px 15px;
+   background-color: $white;
+   ul.left {
+      display: block;
+   }
+}
+
+
+/************************************************
+   -> Content Bloc
+*******************************************/
+
+#mainWrapper {
+
+}
+
+
+/************************************************
+   -> Buttons
+*******************************************/
+
+.btn {
+   background-color: $thunderbird;
+   color: $white;
+}
+.btn:hover {
+   background-color: $monza;
+   color: $white;
+}
+.btn_outline_light {
+   background-color: transparent !important;
+   border-color: $lynch;
+   color: $lynch;
+}
+.btn_outline_light:hover {
+   background-color: $white !important;
+   border-color: transparent;
+   color: $lynch;
+}
+.btn_outline_strong {
+   background-color: transparent !important;
+   border-color: $picton;
+   color: $picton;
+}
+.btn_outline_strong:hover {
+   background-color: $picton !important;
+   border-color: $picton;
+   color: $white;
+}
+
+.btn.btn_light {
+   background-color: $white;
+   color: $lynch;
+}
+.btn.btn_light:hover {
+   background-color: $lynch;
+   color: $white;
+}
+
+.btn.btn_strong {
+   background-color: $picton;
+   color: $white;
+}
+.btn.btn_strong:hover {
+   background-color: $picton2;
+   color: $white;
+}
+
+
+/************************************************
+   -> Home Page Style
+
+*******************************************/
+
+/*********************************
+   Featured
+************************/
+
+#featured {
+   position: relative;
+   padding: 70px 50px 50px 50px;
+   //@include linear-gradient(rgba(8,104,172,1), rgba(8,64,129,1));
+   background-color: $jacksons;
+   h3 {
+      color: $royal;
+   }
+   p {
+      color: $royal;
+      line-height: 1.6em;
+      padding-top: 55px;
+   }
+   #infos_version {
+      margin-top: 30px;
+      color: $royal;
+   }
+}
+
+
+/*********************************
+   Quick links
+************************/
+
+#content_links {
+   .wrapp_box {
+      padding: 25px 50px;
+   }
+   ul {
+      a {
+         color: $picton2;
+         padding: 5px 20px;
+      }
+      a:hover {
+         color: $white;
+      }
+   }
+}
+.content_lowLight {
+   background-color: $porcelain;
+}
+
+.content_highLight {
+   background-color: $picton;
+   color: $white;
+}
+
+.content_highLight2 {
+   background-color: $thunderbird;
+   color: $white;
+}
+
+
+/*********************************
+   Item card
+************************/
+
+.item {
+   text-align: center;
+   padding: 15px;
+   i {
+      font-size: 5em;
+      color: $edward;
+      margin-bottom: 20px;
+   }
+   a {
+      padding: 10px 15px;
+      min-width: 100px;
+   }
+}
+
+
+
+
+/************************************************
+   COMPONENTS
+   -> Personnalisation
+
+*******************************************/
+
+/****************
+   Left Menu
+*/
+#leftMenu {
+   flex: inherit;
+   width: 150px;
+   margin-right: 15px;
+   a {
+      font-size: 1.4em;
+      padding: 5px 0;
+      color: $lynch;
+   }
+   a:hover {
+      padding: 5px 0 5px 3px;
+      color: $edward;
+   }
+}
+
+/****************
+   Components page style
+*/
+#components {
+   h2.title {
+      color: $silver;
+      margin-bottom: 35px;
+      padding-left: 15px;
+      border-left: 10px solid $silver;
+   }
+   p {
+      margin-bottom: 30px;
+   }
+}

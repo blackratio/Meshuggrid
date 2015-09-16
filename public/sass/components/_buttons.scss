@@ -1,0 +1,18 @@
+.btn {
+   display: inline-block;
+   white-space: nowrap;
+   padding: 6px 7px;
+   text-align: center;
+   font-size: 17px;
+   font-weight: 300;
+   border: 1px solid transparent;
+   cursor: pointer;
+   background-color: transparent;
+   border-radius: 4px;
+}
+.btn.long {
+   padding: 13px 18px;
+}
+.btn_outline {
+   background-color: transparent !important;
+}

@@ -1,0 +1,40 @@
+{
+   "name": "Meshuggrid",
+   "version": "0.1.0",
+   "description": "Sass based grid system, with flex inside",
+   "main": "index.html",
+   "moduleType": [
+      "es6",
+      "globals",
+      "node"
+   ],
+   "keywords": [
+      "blank"
+   ],
+   "authors": [
+      "David Wieczorek"
+   ],
+   "license": "MIT",
+   "ignore": [
+      ".jshintrc",
+      "**/*.txt",
+      "bower_components",
+      "test",
+      "tests"
+   ],
+   "dependencies": {
+      "json3": "3.3.2",
+      "es5-shim": "4.1.0",
+      "jquery": "2.1.4",
+      "lodash": "3.10.0",
+      "angular": "1.4.5",
+      "angular-resource": "1.4.5",
+      "angular-ui-router": "0.2.15",
+      "ngstorage": "0.3.7",
+      "fontawesome": "4.4.0"
+   },
+   "devDependencies": {
+      "angular-mocks": "1.4.5",
+      "angular-scenario": "1.4.5"
+   }
+}

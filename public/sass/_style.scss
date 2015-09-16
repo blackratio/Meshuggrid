@@ -99,15 +99,6 @@ pre {
 
 
 /************************************************
-   -> Content Bloc
-*******************************************/
-
-#mainWrapper {
-
-}
-
-
-/************************************************
    -> Buttons
 *******************************************/
 
@@ -236,47 +227,5 @@ pre {
    a {
       padding: 10px 15px;
       min-width: 100px;
-   }
-}
-
-
-
-
-/************************************************
-   COMPONENTS
-   -> Personnalisation
-
-*******************************************/
-
-/****************
-   Left Menu
-*/
-#leftMenu {
-   flex: inherit;
-   width: 150px;
-   margin-right: 15px;
-   a {
-      font-size: 1.4em;
-      padding: 5px 0;
-      color: $lynch;
-   }
-   a:hover {
-      padding: 5px 0 5px 3px;
-      color: $edward;
-   }
-}
-
-/****************
-   Components page style
-*/
-#components {
-   h2.title {
-      color: $silver;
-      margin-bottom: 35px;
-      padding-left: 15px;
-      border-left: 10px solid $silver;
-   }
-   p {
-      margin-bottom: 30px;
    }
 }

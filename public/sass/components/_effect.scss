@@ -9,7 +9,7 @@
 a,
 button,
 input[type="submit"] {
-	@include css3(transition, 0.4s, ease);
+	transition: ease 0.4s;
 	cursor: pointer;
    text-decoration: none;
 }

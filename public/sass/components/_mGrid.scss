@@ -24,7 +24,6 @@ $column-prefix: 'mColone-' !default;
 
 
 
-
 @mixin grid-setup($number: $column-number) {
   // Assign percentage-based widths for columns
   @for $i from 1 through $number {

@@ -77,6 +77,8 @@ footer {
       }
    }
 }
+
+
 #mainMenu.active {
    box-shadow: 0 0px 1px $jacksons;
    padding: 5px 15px;
@@ -179,9 +181,12 @@ footer {
 }
 
 
+
 /*********************************
    Grid bloc style
 ************************/
+
+$zeroooo : #000;
 
 // Meshuggrid parameters
 // $column-number, $gutters-width, $column-prefix

@@ -21,34 +21,25 @@
 body {
    font-family: 'Roboto', sans-serif;
    font-size: 80%;
+   color: $lynch;
+}
+q {
+   background-color: $silverSand;
    color: $blackgray;
-   a {
-      color: $picton;
-   }
-   a:hover {
-      color: $picton2;
-   }
-}
-pre {
-   padding: 15px !important;
-   border-radius: 4px;
-   text-align: left;
-   margin: 0;
 }
 
-.mgrid-row {
-   margin-bottom: 10px;
-   .mGrid {
-      //background-color: $rebecca;
-      padding: 10px;
-      text-align: center;
-      border-radius: 5px;
-      color: $malibu;
-      border: 1px dashed $malibu;
+footer {
+   background-color: $jacksons;
+   .wrapp_box {
+      padding: 30px;
+      h5 {
+         color: $white;
+         padding: 0;
+         margin: 0;
+         text-transform: uppercase;
+      }
    }
 }
-
-
 
 /************************************************
    -> Main Menu
@@ -71,9 +62,6 @@ pre {
       }
    }
    .menu {
-      li:last-child {
-         margin-left: 20px;
-      }
       li {
          a {
             font-weight: 600;
@@ -81,6 +69,7 @@ pre {
             line-height: 40px;
             padding: 0 10px;
             font-size: 1.2em;
+            color: $white;
          }
          i {
             margin-right: 10px;
@@ -89,12 +78,18 @@ pre {
    }
 }
 #mainMenu.active {
-   box-shadow: 0 1px 3px $silver;
+   box-shadow: 0 0px 1px $jacksons;
    padding: 5px 15px;
    background-color: $white;
    ul.left {
       display: block;
    }
+   .menu {
+      a {
+         color: $jacksons;
+      }
+   }
+
 }
 
 
@@ -141,11 +136,11 @@ pre {
 }
 
 .btn.btn_strong {
-   background-color: $picton;
+   background-color: $radical;
    color: $white;
 }
 .btn.btn_strong:hover {
-   background-color: $picton2;
+   background-color: $razzmatazz;
    color: $white;
 }
 
@@ -168,13 +163,53 @@ pre {
       color: $royal;
    }
    p {
-      color: $royal;
+      color: $jordy;
       line-height: 1.6em;
       padding-top: 55px;
    }
    #infos_version {
-      margin-top: 30px;
+      height: 36px;
       color: $royal;
+      margin-left: 15px;
+      h5 {
+         line-height: 36px;
+         color: $white;
+      }
+   }
+}
+
+
+/*********************************
+   Grid bloc style
+************************/
+
+// Meshuggrid parameters
+// $column-number, $gutters-width, $column-prefix
+@include meshuggrid(12, 1.5%, mColone-);
+
+pre {
+   padding: 15px !important;
+   border-radius: 4px;
+}
+
+.mgrid-row {
+   margin-bottom: 10px;
+   .mGrid {
+      background-color: $iron;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      color: $edward;
+      font-size: 1.3em;
+      span {
+         display: inline-block;
+         width: 30px;
+         height: 30px;
+         background-color: $smoke;
+         padding: 5px;
+         border-radius: 50%;
+         text-align: center;
+      }
    }
 }
 
@@ -189,27 +224,40 @@ pre {
    }
    ul {
       a {
-         color: $picton2;
          padding: 5px 20px;
-      }
-      a:hover {
-         color: $white;
       }
    }
 }
 .content_lowLight {
    background-color: $porcelain;
+   color: $lynch;
+   a {
+      color: $silver;
+   }
+   a:hover {
+      color: $jacksons;
+   }
+   q {
+      background-color: $iron;
+      color: $lynch;
+   }
 }
 
 .content_highLight {
-   background-color: $picton;
+   background-color: $radical;
    color: $white;
+   a {
+      color: $newYork;
+   }
+   a:hover {
+      color: $cabaret;
+   }
+   q {
+      background-color: $iron;
+      color: $lynch;
+   }
 }
 
-.content_highLight2 {
-   background-color: $thunderbird;
-   color: $white;
-}
 
 
 /*********************************

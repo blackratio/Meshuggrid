@@ -9,7 +9,7 @@
       <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
       <script src="libs/ngstorage/ngstorage.min.js"></script>
       <script src="libs/lodash/lodash.min.js"></script>
-      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp;lang=css&lang=html" defer="defer"></script>
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp;lang=css" defer="defer"></script>
       <script src="scripts/app.js"></script>
       <script src="scripts/assets/assets.js"></script>
       <script src="scripts/controllers/indexCtrl.js"></script>
@@ -20,12 +20,9 @@
    <body ng-class="$state.current.data.mainSection" id="{{$state.current.data.section}}">
       <div data-ng-include data-src="'partials/main_nav.html'"></div>
       <div ui-view="main_content" id="mainWrapper"></div>
-      <footer class="content_section content_lowLight">
+      <footer class="content_section">
          <div class="wrapp_box center clearfix">
-            <a href="https://github.com/blackratio/origin" target="_blank"><i class="fa fa-github fa-3x"></i></a>
-         </div>
-         <div class="wrapp_box center clearfix">
-            <p>Blackratio2105</p>
+            <h5>Blackratio 2105</h5>
          </div>
       </footer>
    </body>

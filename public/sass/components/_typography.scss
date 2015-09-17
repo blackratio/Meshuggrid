@@ -13,6 +13,7 @@ h1 {
 }
 h2 {
    font-size: x-large;
+   margin-bottom: 20px;
 }
 h3 {
    font-size: large;
@@ -31,4 +32,12 @@ p {
    line-height: 18px;
    margin: 30px 0 20px 0;
    font-weight: 300;
+}
+q {
+   display: inline-block;
+   padding: 15px;
+   border-radius: 5px;
+   margin: 10px 0;
+   font-size: 1.1em;
+   font-style: italic;
 }

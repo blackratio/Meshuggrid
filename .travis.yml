@@ -6,7 +6,7 @@ before_install:
  - gem install sass
 
  #!/usr/bin/env ruby
-result = `sass index.scss index.css`
+result = `sass public/sass/index.scss public/style/index.css`
 raise result unless $?.to_i == 0
-raise "When compiled the module should output some CSS" unless File.exists?('index.css')
+raise "When compiled the module should output some CSS" unless File.exists?('public/style/index.css')
 puts "Regular compile worked successfully"

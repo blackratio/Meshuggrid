@@ -1,5 +1,10 @@
 sudo: false
+before_script:
+  - npm install -g bower
 language: node_js
+script:
+  - npm install
+  - bower install
 node_js:
   - 'stable'
   - '0.12'

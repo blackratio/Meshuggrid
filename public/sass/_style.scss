@@ -22,6 +22,9 @@ body {
    font-family: 'Roboto', sans-serif;
    font-size: 80%;
    color: $lynch;
+   display: flex;
+   flex-flow: column;
+   min-height: 100vh;
 }
 q {
    background-color: $silverSand;
@@ -151,6 +154,10 @@ footer {
    -> Home Page Style
 
 *******************************************/
+
+#mainWrapper {
+   flex: 1;
+}
 
 /*********************************
    Featured

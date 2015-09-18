@@ -7,7 +7,7 @@ directives.directive('anchorClick', function() {
 
          $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 50
-         }, 900);
+         }, 600);
       });
    };
 });

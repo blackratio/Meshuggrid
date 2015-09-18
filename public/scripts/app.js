@@ -71,21 +71,6 @@ function ($stateProvider, $provide, $urlRouterProvider, $httpProvider, $location
          pageTitle: 'Welcome - Meshuggrid',
          section: 'home'
       }
-   })
-
-   .state('docs', {
-      url: '/docs',
-      views: {
-         'main_content': {
-            templateUrl: 'partials/docs/index.html',
-            controller: 'componentsCtrl'
-         }
-      },
-      data : {
-         mainSection: 'framework',
-         pageTitle: 'Docs - Featured & functionnality',
-         section: 'docs'
-      }
    });
 
 }]);

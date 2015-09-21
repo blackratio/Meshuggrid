@@ -165,12 +165,12 @@ footer {
 
 #featured {
    position: relative;
-   padding: 70px 50px 50px 50px;
+   padding: 70px 0 50px 0;
    //@include linear-gradient(rgba(8,104,172,1), rgba(8,64,129,1));
    background-color: $jacksons;
    h2 {
       color: $white;
-      margin-bottom: 5px;
+      margin: 60px 0 35px 0;
    }
    h3 {
       color: $white;

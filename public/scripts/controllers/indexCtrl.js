@@ -1,8 +1,15 @@
 controllers.controller('homeCtrl', ['$scope', '$rootScope', '$http', '$timeout', 'userServices',
 function ($scope, $rootScope, $http, $timeout, userServices) {
 
+
+
+   userServices.verifUser()
+   .then(function(){
+
+   });
+
    userServices.getUsers()
-   .then(function(data){
+   .then(function(){
       $scope.user = data;
    });
 

@@ -6,7 +6,6 @@ function strictMode() {
 var services = angular.module('services', []);
 var controllers = angular.module('controllers', []);
 var directives = angular.module('directives', []);
-var ngStorage = angular.module('ngStorage', []);
 var lodash = angular.module('lodash', []);
 
 var Meshuggrid = angular.module('Meshuggrid', [
@@ -31,7 +30,7 @@ function ($stateProvider, $provide, $urlRouterProvider, $httpProvider, $location
    //$httpProvider.interceptors.push('interceptor');
 
    // Token interceptor
-   //$httpProvider.interceptors.push('TokenInterceptor');
+   $httpProvider.interceptors.push('TokenInterceptor');
 
 
    // Enable/disable Angular Debug Mod

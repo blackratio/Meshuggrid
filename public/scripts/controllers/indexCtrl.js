@@ -1,5 +1,11 @@
-controllers.controller('homeCtrl', ['$scope', '$rootScope', '$http', '$timeout',
-function ($scope, $rootScope, $http, $timeout) {
+controllers.controller('homeCtrl', ['$scope', '$rootScope', '$http', '$timeout', 'userServices',
+function ($scope, $rootScope, $http, $timeout, userServices) {
+
+   userServices.getUsers()
+   .then(function(data){
+      $scope.user = data;
+   });
+
    var data = [150,136,135,101,80,68,50,29,19,41];
    var cats = [
       'Stats',

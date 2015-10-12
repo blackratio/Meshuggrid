@@ -36,6 +36,12 @@ function ($http, $q, $rootScope, $timeout, $stateParams, $location, $interval, $
          $http.get(url)
          .success(function(data){
             deferred.resolve(data);
+            if(data[0].admin === true) {
+               console.log('Bienvenue ' + data[0].name + ', Admin God');
+            }
+            else {
+               console.log('Bienvenue ' + data[0].name + ', Nameless gools');
+            }
          })
          .error(function(){
             deferred.reject();
@@ -50,22 +56,18 @@ function ($http, $q, $rootScope, $timeout, $stateParams, $location, $interval, $
 
 
 services.factory('TokenInterceptor', [
-  "$q", '$rootScope', '$injector', '$sessionStorage', function($q, $rootScope, $injector, $sessionStorage) {
-    return {
-      request: function(config) {
-        config.headers = config.headers || {};
-        //var AuthService = $injector.get('userServices');
-        //console.log(AuthService.verifUser);
-        var token = $sessionStorage.token;
-        config.headers['x-access-token'] = token; // add your token from your service or whatever
-        return config;
-      },
-      response: function(response) {
-        return response || $q.when(response);
-      },
-      responseError: function(rejection) {
-
-      }
-    };
-  }
+   "$q", '$rootScope', '$injector', '$sessionStorage', function($q, $rootScope, $injector, $sessionStorage) {
+      return {
+         request: function(config) {
+            config.headers = config.headers || {};
+            var token = $sessionStorage.token;
+            config.headers['x-access-token'] = token; // add your token from your service or whatever
+            return config;
+         },
+         response: function(response) {
+            return response || $q.when(response);
+         },
+         responseError: function(rejection) {}
+      };
+   }
 ]);

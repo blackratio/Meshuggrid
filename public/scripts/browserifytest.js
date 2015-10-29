@@ -1,0 +1,1 @@
+var myModule = require('./test');

@@ -11,6 +11,18 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+
+/// Meshuggrid mixin function
+/// @group Grid Mixin
+/// @author David Wieczorek
+/// @param {number} $column-number - Colum number needed
+/// @param {percent} $gutters-width - Gutter width you want
+/// @param {name} $column-prefix- Choose Column Class prefix
+/// @example scss - Use case exemple
+///   @include meshuggrid(12, 1.2%, mColone-);
+///   // Hello Meshigrid result
+/// @since version
+
 @mixin meshuggrid($column-number, $gutters-width, $column-prefix) {
 
    // Adding clearfix to Meshuggrid wrapper

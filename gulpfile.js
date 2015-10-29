@@ -8,13 +8,16 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 var babel = require("gulp-babel");
 var karmaServer = require('karma').Server;
+var source = require('vinyl-source-stream');
+var browserify = require('browserify');
+var sassdoc = require('sassdoc');
 
 
 gulp.task('test', function (){
-    new karmaServer({
-        configFile: __dirname + '/karma.conf.js',
-        singleRun: false
-    }).start();
+   new karmaServer({
+      configFile: __dirname + '/karma.conf.js',
+      singleRun: false
+   }).start();
 });
 
 ////////////////////////////////////////
@@ -47,6 +50,17 @@ gulp.task('js', function() {
 });
 
 
+// BROWSERIFY tasks
+
+/*gulp.task('browserify', function() {
+   return browserify('public/scripts/app.js')
+   .bundle()
+   //Pass desired output filename to vinyl-source-stream
+   .pipe(source('bundle.js'))
+   // Start piping stream to tasks!
+   .pipe(gulp.dest('public/scripts/'));
+});*/
+
 ////////////////////////////////////////
 // Production
 ////////////////////////////////////////
@@ -61,6 +75,10 @@ gulp.task('compress', function() {
 });
 
 
+gulp.task('sassdoc', function () {
+  return gulp.src('public/sass/**/*.scss')
+    .pipe(sassdoc());
+});
 
 ////////////////////////////////////////
 // ACTIONS

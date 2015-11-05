@@ -1,7 +1,3 @@
-function strictMode() {
-    "use strict";
-    return true;
-}
 
 var services = angular.module('services', []);
 var controllers = angular.module('controllers', []);
@@ -17,10 +13,10 @@ var Meshuggrid = angular.module('Meshuggrid', [
    'ngStorage'
 ]);
 
-
 Meshuggrid.config(['$stateProvider', '$provide', '$urlRouterProvider', '$httpProvider', '$locationProvider', '$compileProvider',
 function ($stateProvider, $provide, $urlRouterProvider, $httpProvider, $locationProvider, $compileProvider) {
 "use strict";
+
    // Pour toute route inapproprié
    $urlRouterProvider.otherwise('/');
 
